@@ -1,0 +1,755 @@
+/* CSS Trung Hiếu */
+
+body {
+ 	background: #5A1313;
+ 	color: #fff;
+    }
+
+
+/* -------- Trang Đầu -------- */
+
+.Header {
+	width: 100%;
+	height: 100;
+	background: #6f0038;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+	padding: 3 0 3 0;
+	display: block;
+	position: fixed;
+    top: 0;
+    left: 0; 
+    z-index: 10000;
+    }
+
+    .Headerlogo {
+	    width: 30%;
+	    height: 95;
+     	float: left;
+     	padding-left: 30;
+        border-style: solid;
+        border color: #fff;
+	    }
+
+	.Headersearch {
+	    width: 50%;
+	    height: 95;
+	    padding: 0 2 0 2;
+     	display: inline-block;
+        border-style: solid;
+        border color: #fff;
+        }
+	    
+
+	.Headersignin {
+	    width: 16%;
+        height: 95;
+	    text-align: center;
+        padding: 0 0 0 0;
+     	float: right;
+        border-style: solid;
+        border color: #fff;
+	    }
+
+	    .Headersignin a {
+            color: #FAAC58;
+            font-size: 16;
+            font-family: "Times New Roman", Times, serif;
+            }
+
+        .Headersignin a:hover {
+            color: #F4FA58;
+            }
+
+/* -------- Kết Thúc Trang Đầu -------- */
+
+/*-------- Phần Đăng Nhập --------*/
+#mask {
+    display: none;
+    position: fixed; left: 0; top: 0; 
+    z-index: 10;
+    width: 100%; height: 100%;
+    opacity: 0.7;
+    z-index: 9999;
+    background: currentColor;
+    }
+
+.login-popup {
+    display:none;
+    background:#0099aa;
+    padding: 10px;  
+    border: 2px solid #ddd;
+    float: left;
+    font-size: 1.2em;
+    position: fixed;
+    top: 50%; left: 50%;
+    z-index: 99999;
+    box-shadow: 0px 0px 20px #999;
+    -moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+    -webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+    border-radius:3px 3px 3px 3px;
+    -moz-border-radius: 3px; /* Firefox */
+    -webkit-border-radius: 3px; /* Safari, Chrome */
+    }
+    
+img.btn_close {
+    float: right; 
+    margin: -28px -28px 0 0;
+    }
+
+fieldset { 
+    border:none; 
+    }
+
+form.signin .textbox label { 
+    display:block; 
+    padding-bottom:7px; 
+    }
+
+form.signin .textbox span { 
+    display:block;
+    }
+
+form.signin p, form.signin span { 
+    color: #fff;
+    font-size: 13px;
+    line-height: 18px;
+    } 
+
+a.forgot {
+    color: #fff;
+    }
+
+form.signin .textbox input { 
+    background:#666666; 
+    border-bottom:1px solid #333;
+    border-left:1px solid #000;
+    border-right:1px solid #333;
+    border-top:1px solid #000;
+    color:#fff; 
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font:13px Arial, Helvetica, sans-serif;
+    padding:6px 6px 4px;
+    width:200px;
+    }
+
+form.signin input:-moz-placeholder { 
+    color:#bbb; text-shadow:0 0 2px #000; 
+    }
+
+form.signin input::-webkit-input-placeholder { 
+    color:#bbb; text-shadow:0 0 2px #000; 
+    }
+
+.button { 
+    background: -moz-linear-gradient(center top, #f3f3f3, #dddddd);
+    background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#dddddd));
+    background:  -o-linear-gradient(top, #f3f3f3, #dddddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f3f3f3', EndColorStr='#dddddd');
+    border-color:#000; 
+    border-width:1px;
+    border-radius:4px 4px 4px 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color:#333;
+    cursor:pointer;
+    display:inline-block;
+    padding:6px 6px 4px;
+    margin-top:10px;
+    font:12px; 
+    width:214px;
+    }
+
+.button:hover {
+    background:#ddd; 
+    }
+
+.hv_member {
+    display: none;
+    background: cadetblue;
+    right: 0px;
+    border-radius: 7px;
+    position:absolute;
+    color:#fff;
+    text-align:center;
+    box-shadow: 0px 0px 13px #000;
+    }
+
+
+/*--------------Kết thúc phần đăng nhập--------------*/
+
+/*-------- Phần Trình Chiếu ---------*/   
+
+.SlideMenu {
+	width: auto;
+	height: 470;
+	margin: auto;
+	margin-top: 170;
+	background: #3F0707;
+	box-shadow: -4px 8px 42px 2px rgba(0,0,0,0.75);
+    }
+
+    .Slidel {
+    	width: 20%;
+    	height: 450;
+    	text-align: center;
+    	padding-top: 30;
+    	float: left;
+    }
+
+    .Slidec {
+    	width: 60%;
+    	height: 470;
+    	padding-top: 30;
+    	border: 4px solid #800000;
+        border-radius: 15px;
+    	text-align: center;
+    	display: inline-block;
+    	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    
+    }
+
+    .Slider {
+    	width: 20%;
+    	height: 450;
+    	text-align: center;
+    	padding-top: 30;
+    	float: right;
+    }
+
+/* ------Kết Thúc Trình Chiếu -------- */
+
+/*----------Trang Chính  ---------*/
+
+.Main {
+	width: 100%;
+	height: auto;
+	border-color: #330101;
+	border-style: solid;
+	border-width: 0.6;
+	background: #5A1313;
+	padding:0;
+	margin-top: 20;
+	color: #fff;
+    }
+
+/* ----- Kết thúc trang Chính-------- */
+
+/*--------------- Bên trái ---------------*/
+
+.Columnl {
+	width: 20%;
+	height: 1000;
+	border-color: #BDBDBD;
+	border-style: solid;
+	border-width: 0.6;
+	text-align: left;
+	padding: 1 0 2 0;
+	margin-top: 5;
+	float: left;
+}
+
+/*---------Kết thúc bên trái ---------------*/
+
+/*-------------- Chính Giữa -------------*/
+
+.Columnc {
+	width: 65%;
+	height: 1000;
+	border-color: #BDBDBD;
+	border-style: solid;
+	border-width: 0.6;
+	text-align: left;	
+	padding: 1 0 2 0;
+	margin-top: 5;
+	display: inline-block;
+}
+
+/*---------Kết thúc chính giữa ---------------*/
+
+/*--------------- Bên Phải ----------------*/
+
+.Columnr {
+	width: 15%;
+	height: 1000;
+	border-color: #BDBDBD;
+	border-style: solid;
+	border-width: 0.6;
+	text-align: left;
+	padding: 1 0 2 0;
+	margin-top: 5;
+	float: right;
+}
+
+/*--------------- Kết thúc Bên Phải ----------------*/
+
+/*--------------- Cuối Trang -------------*/
+
+.Footer {
+	width: 100%;
+	height: 200;
+	margin-top: 5;
+	background-image: url("/Web/img/main/footer1.png");
+	background-position: 50% 50%;
+    background-size: cover;
+    }
+
+
+/*--------Phần Button----------*/
+
+.button {
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    margin: 4px 2px 4px 2px;
+    cursor: pointer;
+    }
+
+    a:link, a:visited {
+        text-align: center;
+        text-decoration: none;
+        display: inline-block; 
+        }
+
+
+    .Button:hover {
+        background-color: #484848;
+        }
+
+        .button1 {
+	        border-radius: 8px;
+            background-color: #0066ff;
+            text-decoration: none;
+            }
+
+        .button2 {
+	        border-radius: 8px;
+            background-color: #ff3300;
+            text-decoration: none;
+            }
+
+        .button3 {
+	        border-radius: 8px;
+            background-color: #ff1a75;
+            text-decoration: none;
+            }
+
+        .button4 {
+	        border-radius: 8px;
+            background-color: #e68a00;
+            text-decoration: none;
+            }
+
+/*---- Kết thúc phần button -----*>
+
+/*-----------Kết thúc cuối trang ----------------*
+/*--------------------------------------------CART-------------------------------------------------------------------*/
+.menu .nav .cart_top {
+    float: right;
+}
+.menu .nav .cart_top .tit {
+    display: block;
+    float: right;
+    padding-left: 6px;
+    padding-right: 4px;
+}
+.cart_top
+{
+    float: right;
+    line-height: 25px;
+    display: block;
+    color: #333333;
+    font-size:16px;
+    text-decoration:none;
+    position:relative;
+}
+.cart_top:before
+{
+    content: "\f07a";
+    font-family: FontAwesome;
+    font-size: 20px;
+}
+.menu .nav a:hover {
+    color: #e34d86;
+}
+.menu .nav .cart_top .count {
+    background: #ef4679 none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    float: right;
+    font: 700 14px/24px "Ubuntu",sans-serif;
+    margin-top: 7px;
+    padding: 0 8px;
+    position: relative;
+}
+.quick_cart
+{
+    display: none;
+    background: #fff;
+    width: 656px;
+    height:auto;
+    position: absolute;
+    right:11px;
+    z-index: 999999;
+    box-shadow: 1px 1px 13px #000;
+    padding-bottom:15px;
+    margin-top:33px;
+    border-radius: 4px;
+}
+a.cart_top:hover div.quick_cart
+{
+    display:block !important;
+}
+.cart_div:hover div.quick_cart
+{
+    display:block !important;
+}
+a.del_sp {
+    display: -webkit-inline-box !important;
+    color: #ef4679 !important;
+    margin: 0px !important;
+}
+.quick_cart ul.top_cart {
+    background: #0099aa;
+    color: #fff;
+    border-radius: 3px;
+}
+a.goa_shopping {
+    background: #ef4679;
+    cursor: pointer;
+    width: 248px;
+    text-align: center;
+    color: #fff !important;
+    margin-top: 10px;
+    float:right;
+    border-radius:7px;
+}
+a.goa_shopping:hover 
+{
+    background:#d62e4d;
+}
+
+
+.banner
+{
+    float: left;
+    height: 345px;
+    overflow: hidden;
+    width: 850px;
+}
+.content
+{
+    margin: 93px auto 0;
+    width: 1170px;
+}
+.homenew
+{
+    float: right;
+    height: 336px;
+    padding-top: 10px;
+    width: 300px;
+    overflow: hidden;
+}
+img.uudai {
+    height: 132px;
+    width: 298px;
+    padding-top: 8px;
+}
+.image_figure img
+{
+    width:300px
+    height:154px;
+}
+.figure
+{
+    border-bottom: 2px solid #ef4679;
+    clear: both;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    margin: 7px 0 0;
+    padding: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+.figure a
+{
+    background: #ef4679 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+}
+.figure b
+{
+    border-bottom: 32px solid #d93164;
+    border-left: 0 solid transparent;
+    border-right: 20px solid transparent;
+    float: left;
+    height: 0;
+    width: 0;
+}
+.sliderows
+{
+    clear: both;
+    padding-top: 10px;
+    position: relative;
+}
+div.navicate
+{
+    border-color: #e34d86 #eeeeee #eeeeee #ddd;
+    border-style: solid;
+    border-width: 2px 1px 1px;
+    clear: both;
+    height: 41px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 99;
+}
+div.navicate .parent
+{
+    background: #e34d86 none repeat scroll 0 0;
+    float: left;
+    margin: -1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width:139px;
+}
+div.navicate .parent a
+{
+    color: #fff;
+    font-size: 14px;
+    line-height: 42px;
+    text-decoration:none;
+    font-weight:100;
+}
+div.navicate .parent:after 
+{
+    border-bottom: 20px solid transparent;
+    border-left: 11px solid #e34d86;
+    border-top: 20px solid transparent;
+    content: "";
+    height: 0;
+    margin-left: 27px;
+    margin-top: 1px;
+    position: absolute;
+    width: 0;
+}
+div.navicate div.sub 
+{
+    border: none !important;
+}
+div.navicate .sub
+{
+    border-right: 1px solid #ccc;
+    float: right;
+    height: 18px;
+    line-height: 18px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 9px;
+    font-weight:100;
+}
+div.navicate .sub a
+{
+    color: #666;
+    font-size: 13px;
+    text-decoration:none;
+}
+div.navicate div.sub i:before
+{
+    color: #ccc;
+    content: "\f105";
+    display: block;
+    float: right;
+    font-family: FontAwesome;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+    margin-left: 10px;
+    margin-right: 6px;
+    margin-top: 2px;
+}
+.sliderows .banner_rows
+{
+    display: block;
+    float: left;
+    height: 310px;
+    width: 850px;
+
+}
+.sliderows .selling
+{
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    float: right;
+    height: 309px;
+    overflow: hidden;
+    padding-left: 5px;
+    right: 0;
+    text-align: center;
+    width: 314px;
+    position:absolute;
+}
+div.sliderows .row_product
+{
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    clear: both;
+    padding-top: 25px;
+    width: 1168px;
+}
+.owl-carousel {
+    display: none;
+    position: relative;
+    width: 100%;
+    -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper-outer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.sliderows .row_product .row_product_h 
+{
+    clear: both;
+    height: 296px;
+}
+.sliderows .row_product .owl-item .images
+{
+    clear: both;
+    display: block;
+    height: 196px;
+    overflow: hidden;
+    text-align: center;
+}
+.owl-carousel .owl-item {
+    float: left;
+}
+.owl-carousel .owl-wrapper:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.sliderows .row_product .owl-item h2
+{
+    clear: both;
+    height: 36px;
+    overflow: hidden;
+    padding: 5px;
+    text-align: center;
+}
+.sliderows .row_product .owl-item h2 a {
+    color: #666;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration:none;
+}
+.sliderows .row_product .owl-item .price
+{
+    clear: both;
+    font-size: 15px;
+    margin: auto;
+    text-align: center;
+}
+.price {
+    color: #f44336;
+    font: 700 14px/22px Helvetica,Arial,sans-senif;
+}
+.sliderows_t {
+    padding-top: 6px !important;
+}
+.sliderows {
+    clear: both;
+    padding-top: 10px;
+    position: relative;
+}
+.ratings {
+    clear: both;
+    display: table;
+    font-size: 11px;
+    margin: auto;
+    position: relative;
+    text-align: left;
+}
+.rating-box::before {
+    font-family: "FontAwesome";
+    content: "\f005\f005\f005\f005\f005";
+    letter-spacing: 2px;
+    color: #ccc;
+    position: relative;
+}
+.rating-box .rating {
+    color: black;
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.rating-box .rating::before {
+    content: "\f005\f005\f005\f005\f005";
+    font-family: "FontAwesome";
+    letter-spacing: 2px;
+}
+.sliderows .add_cart {
+    background: #be2038 none repeat scroll 0 0 !important;
+    border: 1px solid #be2038 !important;
+    color: #fff !important;
+    display: none;
+    margin-top: -170px;
+    position: relative;
+}
+.add_cart {
+    border: 1px solid #ddd;
+    clear: both;
+    cursor: pointer;
+    font-size: 13px;
+    margin: 4px auto auto;
+    padding: 5px;
+    text-align: center;
+    width: 145px;
+}
+.add_cart i {
+    display: inline-block;
+    font-size: 16px;
+    padding-right: 5px;
+}
+.sliderows .add_cart:hover {
+    background: #ff7572 !important;
+    color: #fff !important;
+    border: 1px solid #ff7572 !important;
+}
+.add_cart:hover i {
+    color: #fff;
+}
+.add_cart:hover {
+    background: #ff7572;
+    color: #fff;
+    border: 1px solid #ff7572;
+}
+
+.add_cart i:before {
+    content: "\f07a";
+    font-family: FontAwesome;
+}
+.owl-item:hover .add_cart
+{
+    display:block !important;
+}
+
+/* By Trung Hiếu */

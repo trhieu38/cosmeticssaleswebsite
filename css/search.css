@@ -1,0 +1,19 @@
+.search input[type=text] {
+      width: 250px;
+      box-sizing: border-box;
+      border: 2px solid #9C1B1B;
+      color: #FAFAFA;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: #6f0038;
+      background-image: url('/webdoan/img/icon/search.png');
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding: 10px 20px 10px 40px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out; 
+      }
+
+.search input[type=text]:focus {
+      width: 70%;
+      }
